@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    line-height: 24px;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EDEDED;
+    letter-spacing: 0.2px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.header{
+    max-width: 1046px;
+    margin: 0 auto;
+    height: 104px;
+}
+
+.logo{
+    position: absolute;
+    font-size: 24px;
+    color: #252B42;
+    padding: 36px 0 0 0;
+}
+
+.navBar{
+    margin-left: 223px;
+}
+
+.link{
+    display: flex;
+}
+
+.link li{
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+.link > *:not(:last-child){
+    margin-right: 21px;
+}
+
+.link li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #737373;
+}
+
+.bgcHeader{
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    height: 924px;
+    width: 1440px;
+}
+
+.bgcHeaderImg{
+    background-image: url(../img/cover.jpg);
+    background-size: 1440px 793px;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 793px;
+    width: 1440px;
+}
+
+/*1Scren*/
+.FirstScreen{
+    max-width: 1046px;
+    margin: 0 auto;
+}
+
+.FirstScreenContainer{
+    margin-top: 80px;
+}
+
+.FirstScreenContainer > *:not(:last-child){
+    margin-bottom: 35px;
+}
+
+.FirstScreenContainer{
+    max-width: 395px;
+}
+
+.FirstScreenContainer h1{
+    font-weight: 800;
+    font-size: 54px;
+    color: #252B42;
+    line-height: 80px;
+}
+
+.FirstScreenContainer p{
+    font-weight: 500;
+    font-size: 20px;
+    color: #737373;
+    line-height: 30px;
+}
+
+.FirstScreenContainerBtn{
+    display: flex;
+}
+
+.FirstScreenContainerBtn > *:not(:last-child){
+margin-right: 10px;
+}
+
+.btnFirstScreen{
+    padding: 10px 36px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 37px;
+    transition: 0.4s;
+    cursor: pointer;  
+}
+
+.FirstScreenContainerBtnLeft {
+    background-color: #FF7B47;
+    border: 1px solid #0d5c6300;
+    color: #FFFFFF;
+}
+
+.FirstScreenContainerBtnRigth {
+    color: #0D5C63;
+    border: 1px solid #0D5C63;
+}
+
+/*1ScreenCard*/
+.FirstScreenCard {
+    max-width: 1046px;
+    height: 242px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 70px;
+}
+
+.cardFirstScreen{
+    max-width: 328px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.FirstScreenCardLeft,
+.FirstScreenCardCenter {
+    background-color: #FFFFFF;
+    margin-right: 30.5px;
+}
+
+.FirstScreenCardRight {
+    background-color: #0D5C63;
+}
+
+.cardFirstScreen img{
+    width: 47px;
+    height: 41px;
+}
+
+.cardFirstScreen h3{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.FirstScreenCardLeft h3,
+.FirstScreenCardCenter h3{
+    color: #252B42
+}
+
+.cardFirstScreen p{
+    font-weight: 500;
+    line-height: 20px;
+    color: #737373
+}
+
+.FirstScreenCardRight h3, .FirstScreenCardRight p{
+    color: #FFFFFF;
+}
+
+.cardFirstScreen{
+    padding: 35px 40px;
+}
+
+/*2Screen*/
+.twoScreen{
+    max-width: 1440px;
+    height: 526px;
+    background-color: #FAFAFA;
+}
+
+.twoScreenContainer{
+    max-width: 1046px;
+    height: 526px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.twoScreenContainerText{
+    width: 864px;
+    height: 107px;
+    text-align: center;
+}
+
+.twoScreenContainerText h2{
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.twoScreenContainerText p{
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #737373;
+    width: 511px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.twoScreenContainerCard{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.twoScreenContainerCard > *:not(:last-child){
+    margin-right: 42px;
+}
+
+.twoScreenContainerCard div{
+    width: 230px;
+    height: 209px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.twoScreenContainerCard div img{
+    width: 48px;
+    height: 48px;
+}
+
+.twoScreenContainerCard div h2{
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.twoScreenContainerCard div h5{
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #737373;
+}
+
+/*3Screen*/
+.threeScreen{
+    max-width: 1440px;
+    height: 699px;
+    background-color: #FAFAFA;
+}
+
+.threeScreenContainer{
+    max-width: 1046px;
+    height: 699px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.threeScreenContainerText{
+    margin: 0 auto;
+    text-align: center;
+    width: 470px;
+    height: 107px;
+    margin-bottom: 45px;
+}
+
+.threeScreenContainerText h2{
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.threeScreenContainerText p{
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #737373;
+}
+
+.threeScreenContainerCard{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.threeScreenContainerCard > *:not(:last-child){
+    margin-right: 42px;
+}
+
+.threeScreenContainerCard div{
+    height: 341px;
+    width: 230px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.6s;
+}
+
+.threeScreenContainerCard div h5{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    padding: 30px 30px 0 30px;
+}
+
+.threeScreenContainerCard div p{
+    font-weight: 500;
+    line-height: 20px;
+    color: #737373;
+    padding: 0 30px 0 30px;
+}
+
+/*4Screen*/
+.fourScreen{
+    max-width: 1440px;
+    height: 890px;
+    background: #FFFFFF;
+}
+
+.fourScreenContainer{
+    max-width: 1046px;
+    height: 890px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+.video{
+    width: 597px;
+    height: 442px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.video img{
+    height: 100%;
+}
+
+.fourScreenContainerBot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.fourScreenContainerText{
+    text-align: center;
+}
+.fourScreenContainerText h2{
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    color: #252B42;
+}
+
+.fourScreenContainerText p{
+    font-weight: 500;
+    line-height: 20px;
+    color: #737373;
+}
+
+.fourScreenContainerBotLeft h2{
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.calendars  p{
+    font-weight: 500;
+    line-height: 20px;
+    color: #737373;
+}
+
+.theQuickOneFlex,
+.theQuickTwoFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.theQuickOneFlex h5,
+.theQuickTwoFlex h5{
+    font-size: 16px;
+    color: #252B42;
+    padding-left: 20px;
+}
+
+.theQuickOne p,
+.theQuickTwo p{
+    font-weight: 600;
+    color: #737373;
+    padding-left: 52px;
+}
+
+.fourScreenContainerBotLeft{
+    width: 337px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.theQuickTwoFlex{
+    margin-top: 30px;
+}
+
+.theQuickOneFlex{
+    margin-top: 50px;
+}
+
+.calendars{
+    margin-top: 10px;
+}
+
+/* 5 Screen */
+.fiveScreen{
+    max-width: 1440px;
+    height: 339px;
+    background-color: #FAFAFA;
+}
+
+.clients{
+    max-width: 1046px;
+    height: 339px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.clientsForm{
+    width: 987px;
+    height: 124px;
+    background-color: #17213C;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.clientsForm h3{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    width: 266px;
+    height: 64px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+.clientsForm input[type="text"]{
+    outline: none;
+    background-color: #17213C;
+    background-color: #F9F9F9; 
+    width: 333px;
+    height: 58px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #F9F9F9;
+}
+
+.YourEmail{
+    padding-left: 20px;
+}
+
+.clientsForm input[type="submit"]{
+    outline: none;
+    height: 58px;
+    width: 117px;
+    background-color: #FF7B47;
+    font-weight: 400;
+    color: #FFFFFF;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #F9F9F9;
+    transition: 0.6s;
+}
+
+.clientsRowkImg{
+    width: 1030px;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.contJpg1{
+    width: 153px;
+}
+.jpg1{
+    width: 102.99px;
+}
+
+.contJpg2{
+    width: 146px;
+}
+.jpg2{
+    width: 83px;
+}
+
+.contJpg3{
+    width: 152px;
+}
+.jpg3{
+    width: 102px;
+}
+
+.contJpg4{
+    width: 151px;
+}
+.jpg4{
+    width: 102.98px;
+}
+
+.contJpg5{
+    width: 151px;
+}
+.jpg5{
+    width: 103.68px;
+}
+
+.contJpg6{
+    width: 151px;
+}
+.jpg6{
+    width: 75.75px;
+}
+
+.clientsRowkImg > *:not(:last-child){
+    margin-right: 30px;
+}
+
+.clientsBg{
+    width: 1440px;
+    height: 77px;
+    background-color: #252B42;
+    position: relative;
+    margin-top: -77px;
+    z-index: 1;
+}
+
+/* 6Screen */
+.sixScreen{
+    max-width: 1440px;
+    height: 808px;
+    background-color: #F3F3F3;
+}
+
+.sixScreenContainer{
+    width: 1046px;
+    height: 808px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sixScreenContainerText{
+    margin-bottom: 80px;
+}
+
+.sixScreenContainerText h2{
+    font-size: 40px;
+    line-height: 57px;
+    color: #252B42;
+}
+
+.sixScreenContainerText p{
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #737373;
+}
+
+.sixScreenContainerCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 987px;
+    height: 393px;
+    margin-bottom: 148px;
+}
+
+.sixScreenContainerCardLeft,.sixScreenContainerCardRigth{
+    width: 329px;
+    height: 333px;
+    background-color: #FFFFFF;
+    transition: 0.6s;
+}
+
+.sixScreenContainerCardCentre{
+    width: 329px;
+    height: 393px;
+    background-color: #252B42;
+    transition: 0.6s;
+}
+
+.sixScreenCard h6{
+    font-weight: 600;
+    color: #252B42;
+}
+
+.sixScreenCard .com h6{
+    font-weight: 600;
+    color: #252B42;
+}
+
+.sixScreenCard h5{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.sixScreenContainerCardCentre h6,
+.sixScreenContainerCardCentre .com h6,
+.sixScreenContainerCardCentre h5{
+    color: #FFFFFF;
+}
+
+.sixScreenCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixScreenCard img{
+    height: 72px;
+}
+
+.sixScreenCard > *:not(:last-child){
+    margin-bottom: 15px;
+}
+
+.sixScreenCard .btn{
+    cursor: pointer;
+    border: 1px solid #FF7B47;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.sixScreenCard .btnCentre {
+    border: 1px solid #FFFFFF;
+}
+
+/*footer*/
+.footer{
+    max-width: 1440px;
+    height: 488px;
+}
+
+.ConsultingAgency{
+    width: 987px;
+    height: 142px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ConsultingText h3{
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+}
+
+.ConsultingText p{
+    font-weight: 500;
+    line-height: 20px;
+    color: #737373;
+}
+
+.ConsultingBtn{
+    width: 160px;
+    height: 58px;
+    background-color: #FF7B47;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.ConsultingBtn p{
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.waveFooterList{
+    width: 1440px;
+    height: 272px;
+    background-color: #17213C;
+    color: #FFFFFF;
+}
+
+.footerList{
+    width: 987px;
+    height: 272px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.MadeWithLove{
+    width: 987px;
+    height: 74px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.waveFooterList .footerList div h5{
+    font-size: 16px;
+    letter-spacing: 0.1px;
+}
+
+.waveFooterList .footerList div p, 
+.FooterGetInTouch div h6{
+    font-weight: 600;
+}
+
+.phone, 
+.mark, 
+.mail {
+    display: flex;
+}
+
+.phone  img, 
+.mark img, 
+.mail img {
+    padding-right: 15px;
+}
+
+.CompanyInfo > *:not(:last-child), 
+.Legal > *:not(:last-child), 
+.Features > *:not(:last-child), 
+.Resources > *:not(:last-child), 
+.FooterGetInTouch > *:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.socialNetwork{
+    display: flex;
+}
+
+.socialNetwork > *:not(:last-child){
+    padding-right: 20px;
+}
+
+.MadeWithLove h6{
+    font-weight: 600;
+    color: #737373;
+}
