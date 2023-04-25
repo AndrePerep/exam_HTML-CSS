@@ -730,7 +730,7 @@ margin-right: 10px;
     color: #FFFFFF;
 }
 
-.waveFooterList{
+.wrapperFooterList{
     width: 1440px;
     height: 272px;
     background-color: #17213C;
@@ -756,41 +756,33 @@ margin-right: 10px;
     align-items: center;
 }
 
-.waveFooterList .footerList div h5{
+.wrapperFooterList .footerList div h5{
     font-size: 16px;
     letter-spacing: 0.1px;
 }
 
-.waveFooterList .footerList div p, 
-.FooterGetInTouch div h6{
+.wrapperFooterList .footerList div p, 
+.FooterIcons div h6{
     font-weight: 600;
 }
 
-.phone, 
-.mark, 
-.mail {
+.FooterIcon {
     display: flex;
 }
 
-.phone  img, 
-.mark img, 
-.mail img {
+.FooterIcon img {
     padding-right: 15px;
 }
 
-.CompanyInfo > *:not(:last-child), 
-.Legal > *:not(:last-child), 
-.Features > *:not(:last-child), 
-.Resources > *:not(:last-child), 
-.FooterGetInTouch > *:not(:last-child){
+.FooterCalum > *:not(:last-child){
     margin-bottom: 10px;
 }
 
-.socialNetwork{
+.messengerNetwork{
     display: flex;
 }
 
-.socialNetwork > *:not(:last-child){
+.messengerNetwork > *:not(:last-child){
     padding-right: 20px;
 }
 
